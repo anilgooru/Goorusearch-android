@@ -1,0 +1,410 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true" >
+
+        <include layout="@layout/activity_app_header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="fill_parent"
+        android:layout_height="640dp"
+        android:layout_below="@+id/layoutHeader"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/chalkboard_bg" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="640dp" >
+
+                <RelativeLayout
+                    android:id="@+id/FrameVideo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/videoScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:scrollbars="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutVideo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/videoRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FrameInteractive"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/FrameVideo"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/interactiveScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutInteractive"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interactive"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/interactiveRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FrameWebsite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/FrameInteractive"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/websiteScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutWebsite"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Website"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/websiteRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FrameTextbook"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/FrameWebsite"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/textbookScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutTextbook"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Textbook"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/textbookRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FrameExam"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/FrameTextbook"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/examScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutExam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exam"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/examRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FrameHandout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/FrameExam"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/handoutScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutHandout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Handout"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/handoutRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FrameSlide"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/FrameHandout"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/slideScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutSlide"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Slide"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/slideRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FrameLesson"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/FrameSlide"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:alpha="0.2"
+                        android:background="@color/White" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/lessonScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutLesson"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lesson"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/lessonRight"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_below="@+id/layoutMain"
+        android:layout_centerHorizontal="true" >
+
+        <include layout="@layout/activity_app_footer" />
+    </RelativeLayout>
+
+</RelativeLayout>

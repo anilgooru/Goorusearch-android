@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="82dp"
+    android:background="@color/White" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rlWhiteLine"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/White" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rlWhiteLine"
+        android:background="@color/gooruGray" >
+
+        <ImageView
+            android:id="@+id/imgViewSections"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:contentDescription="@string/desc_sections"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/gooru_sections" />
+
+        <ImageView
+            android:id="@+id/imgViewGooruSearch"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/imgViewSections"
+            android:contentDescription="@string/desc_gooru_search"
+            android:scaleType="fitXY"
+          android:visibility="gone"
+            android:src="@drawable/gooru_button" />
+
+        <ImageView
+            android:id="@+id/imgViewSettings"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:contentDescription="@string/desc_settings"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/gooru_settings" />
+    </RelativeLayout>
+
+</RelativeLayout>

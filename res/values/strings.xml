@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Gooru Search</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home_screen">Gooru Search</string>
+    <string name="title_activity_gooru_search">Gooru Search</string>
+    <string name="search_textdefault">Discover with Gooru</string>
+
+    <color name="Merun">#a31f23</color>
+    <color name="Grey">#EEEEEE</color>
+    <color name="Green">#4E9746</color>
+    <color name="Blue">#1076BB</color>
+    <color name="Orange">#FBB03B</color>
+    <color name="White">#FFFFFF</color>
+    <color name="AlphaWhite">#FFFFFF</color>
+    <color name="Blah">#EAEBFF</color>
+    <color name="LightBlue">#60AFFE</color>
+    <color name="NeonBlue">#4D4DFF</color>
+    <color name="gooruGray">#515151</color>
+    <color name="gooruMainScreenText">#999999</color>
+
+    <string name="heading">Heading..</string>
+    <string name="resource_ico">Resource Icon</string>
+    <string name="viewsNLikes">0 Views\n0 Likes</string>
+    <string name="title_activity_resource_player">ResourcePlayer</string>
+    <string name="title_activity_main">Gooru Search Widget</string>
+    <string name="resource_ico_width">66dp</string>
+    <string name="resource_ico_height">44dp</string>
+    <string name="LoremIpsum"> Lorem ipsum dolor sit amet,consectetur adipiscing elit.Pellentesque ultricies sagittis nunc, vel aliquam tellus blandit sit amet. Donec pretium eleifend orci,sed bibendum</string>
+
+    <!-- Footer Text -->
+    <string name="desc_sections">Sections</string>
+    <string name="desc_gooru_search">Gooru Search</string>
+    <string name="desc_settings">Settings</string>
+    <!-- Main Screen Text -->
+    <string name="desc_gooru_logo">Gooru Logo Image</string>
+    <string name="mainScreenText">Search millions of multimedia web resources about any topic you’d like to study or teach</string>
+    <string name="title_activity_search_results_resource">SearchResults_resource</string>
+    <string name="title_activity_search_results__collections">SearchResults_Collections</string>
+
+</resources>

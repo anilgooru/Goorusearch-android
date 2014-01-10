@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ednovo"
+    android:versionCode="3"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/study"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".goorusearchwidget.HomeScreenActivity"
+            android:label="@string/title_activity_home_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.ednovo.goorusearchwidget.ViewPagerFragmentActivity" >
+        </activity>
+        <activity android:name="org.ednovo.goorusearchwidget.Tab1Fragment" >
+        </activity>
+        <activity
+            android:name="org.ednovo.goorusearchwidget.SearchResults_resource"
+            android:label="@string/title_activity_search_results_resource" >
+        </activity>
+        <activity
+            android:name="org.ednovo.goorusearchwidget.SearchResults_Collections"
+            android:label="@string/title_activity_search_results__collections" >
+        </activity>
+        <activity
+            android:name="org.ednovo.goorusearchwidget.CoverPage"
+            android:label="@string/title_activity_search_results__collections" >
+        </activity>
+        <activity
+            android:name="org.ednovo.goorusearchwidget.ResourcePlayer"
+            android:label="Resource player" >
+        </activity>
+        <activity
+            android:name="org.ednovo.goorusearchwidget.SearchDialogpopup"
+            android:label="Resource Popup"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="62dp"
+    android:background="@color/Grey"
+    tools:context=".AppHeader" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gooruGray" >
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/close_corner" />
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/imageViewClose"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <EditText
+            android:id="@+id/textViewSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/switchResColl"
+            android:layout_toRightOf="@+id/imageViewSearch"
+            android:background="@drawable/background"
+            android:hint="@string/desc_gooru_search"
+            android:textColor="@color/Blue"
+            android:textCursorDrawable="@null" />
+
+        <Switch
+            android:id="@+id/switchResColl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="53dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:textOff="Resources"
+            android:visibility="invisible"
+            android:textOn="Collections" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewSearch"
+            android:src="@drawable/searchgoorupic" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -3,7 +3,7 @@ Goorusearch-android
 
 Introduction
 ================
-Gooru Search for Android  services provide the solution to search millions of resources, in the Gooru Learning Catalog.   The Search is displayed based on categories to help user to pick the category most relevant to him.
+Gooru Search for Android application provides the solution to search millions of resources, in the Gooru Learning Catalog.   The Search is displayed based on categories to help user to pick the category most relevant to him.
 
 Learn more about our open source software on our developer’s page where you can find links to documentation and resources at: http://developers.goorulearning.org/
 
